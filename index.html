@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-light pl-3 menu fixed-top">
+            <div class="container-fluid">
+                <a data-aa-action="aa-link" href="/" class="logo navbar-brand" tabindex="0" data-di-id="#logo"
+                    data-aa-link-text="Toyota Logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="197" height="31">
+                        <style>
+                            .st1a {
+                                fill: #0081c8;
+                            }
+
+                            .st2a {
+                                fill: #ee334e;
+                            }
+
+                            .st3a {
+                                fill: #00a651;
+                            }
+
+                            .st5a {
+                                fill: #fff;
+                            }
+
+                            .st6a {
+                                fill: #c42032;
+                            }
+
+                            .st7a {
+                                fill: #152c53
+                            }
+                        </style>
+                        <title>Toyota</title>
+                        <path fill="none" stroke="#717073" stroke-width=".5" d="M123.619 1.814v27.377"></path>
+                        <path class="st1a"
+                            d="M138.411 21.155a3.097 3.097 0 1 0-2.829 3.086 3.356 3.356 0 0 1 .003-.519 2.58 2.58 0 1 1 .532-.113 2.565 2.565 0 0 0-.024.544 3.098 3.098 0 0 0 2.318-2.998">
+                        </path>
+                        <path class="st2a"
+                            d="M151.832 21.155a3.096 3.096 0 0 1-6.183.272c.184.019.362.058.533.113a2.58 2.58 0 1 0-.024-.545 3.184 3.184 0 0 0-.512-.088 3.097 3.097 0 0 1 6.186.248">
+                        </path>
+                        <path class="st3a"
+                            d="M147.956 24.154a2.581 2.581 0 1 1-3.379-2.613 2.58 2.58 0 0 0 .024-.545 3.098 3.098 0 1 0 3.867 3.245 3.058 3.058 0 0 1-.512-.087m-2.577-2.741c1.295 0 2.367.953 2.553 2.196.171.056.349.094.532.113a3.096 3.096 0 0 0-3.353-2.813 3.045 3.045 0 0 1-.002.518c.089-.009.179-.014.27-.014">
+                        </path>
+                        <path
+                            d="M141.757 24.241a3.098 3.098 0 0 1-6.184-.246c0-1.441.985-2.653 2.318-2.998a2.589 2.589 0 0 1-.024.545 2.582 2.582 0 0 0 .803 5.035 2.58 2.58 0 0 0 2.576-2.422c.165.042.336.071.511.086m-3.358-2.814a3.06 3.06 0 0 0 .003-.519 3.097 3.097 0 0 1 3.353 2.814 2.551 2.551 0 0 1-.533-.113 2.582 2.582 0 0 0-2.823-2.182"
+                            fill="#fcb131"></path>
+                        <path
+                            d="M142.024 23.736a2.582 2.582 0 0 1-2.552-2.196 2.538 2.538 0 0 0-.533-.113 3.098 3.098 0 0 0 3.353 2.813 3.349 3.349 0 0 1 .002-.518c-.089.01-.179.014-.27.014m0-5.678a3.097 3.097 0 0 0-3.087 2.851c.175.015.346.045.511.088a2.58 2.58 0 1 1 3.379 2.613 2.589 2.589 0 0 0-.024.545 3.1 3.1 0 0 0-.779-6.097">
+                        </path>
+                        <path class="st5a" d="M152.968 1.814h-22.261v14.695h22.636V1.814z"></path>
+                        <path class="st6a"
+                            d="M140.17 2.189h12.797v1.072H140.17zm0 2.145h12.797v1.072H140.17zm0 2.135h12.797v1.072H140.17zm0 2.148h12.797v1.071H140.17zm-9.088 2.148h21.885v1.072h-21.885zm0 2.134h21.885v1.072h-21.885zm0 2.164h21.885v1.071h-21.885z">
+                        </path>
+                        <path class="st7a" d="M131.082 2.189h9.089v7.499h-9.089z"></path>
+                        <path class="st5a"
+                            d="M132.485 3.556h.371l-.297.227.114.364-.295-.224-.296.224.116-.364-.299-.227h.365l.114-.353zm.002 2.263h.369l-.298.228.116.364-.297-.224-.295.224.118-.364-.301-.228h.368l.11-.356zm-.002 2.26h.371l-.297.227.114.364-.295-.223-.296.223.116-.364-.299-.227h.365l.114-.353zm3.269-4.523h.371l-.298.227.115.364-.295-.224-.296.224.116-.364-.299-.227h.365l.114-.353zm.002 2.263h.369l-.298.228.116.364-.297-.224-.295.224.117-.364-.3-.228h.368l.11-.356zm-.002 2.26h.371l-.298.227.115.364-.295-.223-.296.223.116-.364-.299-.227h.365l.114-.353zm3.272-4.523h.368l-.296.227.118.364-.299-.224-.295.224.117-.364-.302-.227h.369l.111-.353zm-.002 2.263h.37l-.298.228.119.363-.3-.223-.294.223.118-.363-.302-.228h.369l.109-.356zm.002 2.26h.368l-.296.228.118.364-.299-.224-.295.224.117-.364-.302-.228h.369l.111-.355zm-4.904-3.391h.368l-.297.229.115.363-.296-.223-.296.223.118-.363-.301-.229h.368l.111-.355zm-.003 2.261h.371l-.297.227.114.365-.294-.224-.297.224.117-.365-.3-.227h.365l.115-.353zm3.272-2.261h.369l-.298.229.115.363-.296-.223-.296.223.118-.363-.301-.229h.368l.111-.355zm-.003 2.261h.372l-.298.227.114.365-.294-.224-.296.224.116-.365-.299-.227h.365l.114-.353zM182.625 1.814h-22.261v14.695H183V1.814z">
+                        </path>
+                        <path class="st6a"
+                            d="M169.827 2.189h12.797v1.072h-12.797zm0 2.145h12.797v1.072h-12.797zm0 2.135h12.797v1.072h-12.797zm0 2.148h12.797v1.071h-12.797zm-9.088 2.148h21.885v1.072h-21.885zm0 2.134h21.885v1.072h-21.885zm0 2.164h21.885v1.071h-21.885z">
+                        </path>
+                        <path class="st7a" d="M160.739 2.189h9.089v7.499h-9.089z"></path>
+                        <path class="st5a"
+                            d="M162.142 3.556h.371l-.297.227.114.364-.295-.224-.296.224.116-.364-.299-.227h.365l.114-.353zm.002 2.263h.37l-.298.228.115.364-.297-.224-.295.224.118-.364-.301-.228h.368l.11-.356zm-.002 2.26h.371l-.297.227.114.364-.295-.223-.296.223.116-.364-.299-.227h.365l.114-.353zm3.269-4.523h.371l-.297.227.114.364-.295-.224-.296.224.117-.364-.3-.227h.365l.114-.353zm.002 2.263h.369l-.298.228.116.364-.297-.224-.295.224.117-.364-.3-.228h.368l.11-.356zm-.002 2.26h.371l-.297.227.114.364-.295-.223-.296.223.117-.364-.3-.227h.365l.114-.353zm3.273-4.523h.367l-.296.227.118.364-.299-.224-.295.224.117-.364-.302-.227h.369l.111-.353zm-.003 2.263h.37l-.297.228.118.363-.299-.223-.295.223.118-.363-.302-.228h.37l.109-.356zm.003 2.26h.367l-.296.228.118.364-.299-.224-.295.224.117-.364-.302-.228h.369l.111-.355zm-4.905-3.391h.369l-.298.229.115.363-.296-.223-.296.223.118-.363-.301-.229h.368l.111-.354zm-.003 2.261h.371l-.297.227.114.365-.294-.224-.297.224.117-.365-.3-.227h.365l.115-.353zm3.272-2.261h.369l-.298.229.115.363-.296-.223-.296.223.118-.363-.3-.229h.367l.111-.354zm-.003 2.261h.372l-.298.227.114.365-.294-.224-.296.224.116-.365-.299-.227h.365l.114-.353z">
+                        </path>
+                        <path class="st2a"
+                            d="M170.931 18.149c-1.086-.25-2.568.025-3.969.834-2.191 1.265-3.352 3.356-2.593 4.671.485.84 1.637 1.16 2.977.951-.613-.141-1.099-.449-1.373-.924-.759-1.315.402-3.406 2.593-4.671.791-.456 1.608-.743 2.365-.861">
+                        </path>
+                        <path class="st3a"
+                            d="M170.95 23.336c.326 1.065 1.306 2.211 2.707 3.02 2.191 1.265 4.583 1.225 5.342-.09.485-.84.186-1.997-.665-3.053.184.601.16 1.177-.114 1.651-.759 1.315-3.151 1.355-5.342.09-.791-.457-1.448-1.021-1.928-1.618">
+                        </path>
+                        <path class="st1a"
+                            d="M169.464 20.756c-.759.815-1.262 2.237-1.262 3.854 0 2.53 1.231 4.581 2.749 4.581.97 0 1.823-.838 2.312-2.102-.429.46-.939.727-1.487.727-1.518 0-2.749-2.051-2.749-4.581 0-.914.161-1.765.437-2.479">
+                        </path>
+                        <g>
+                            <path
+                                d="M108.564 16.363l1.605-4.208 1.602 4.208h-3.207zm3.271-6.597h-3.333l-4.658 11.409h2.887l1.061-2.784h4.752l1.061 2.784h2.886l-4.656-11.409zm-23.508 9.425c-1.881 0-3.403-1.696-3.403-3.79 0-2.094 1.522-3.791 3.403-3.791 1.878 0 3.402 1.697 3.402 3.791s-1.525 3.79-3.402 3.79m0-9.817a6.027 6.027 0 0 0 0 12.052 6.027 6.027 0 1 0 0-12.052m-23.786 9.817c-1.878 0-3.401-1.696-3.401-3.79 0-2.094 1.523-3.791 3.401-3.791 1.88 0 3.403 1.697 3.403 3.791.001 2.094-1.523 3.79-3.403 3.79m0-9.817a6.025 6.025 0 0 0-6.025 6.027 6.026 6.026 0 1 0 6.025-6.027m14.899.392l-2.953 4.616-2.956-4.616h-2.888l4.572 7.155v4.254h2.543v-4.254l4.572-7.156h-2.89zm25.012 0h-9.756v2.188h3.614v9.222h2.545v-9.222h3.598V9.766zm-56.225 2.187h3.615v9.222h2.544v-9.222h3.599V9.766h-9.757v2.187z">
+                            </path>
+                            <path fill="#eb0a1e" d="M14 1.809h27.381V29.19H14z"></path>
+                            <path class="st5a"
+                                d="M32.257 9.528c-1.271-.409-2.852-.65-4.566-.65s-3.296.241-4.566.65c-3.38 1.087-5.702 3.343-5.702 5.951 0 3.668 4.597 6.643 10.269 6.643 5.67 0 10.267-2.975 10.267-6.643 0-2.608-2.323-4.864-5.702-5.951m-4.566 9.737c-.846 0-1.538-1.664-1.578-3.755a17.561 17.561 0 0 0 3.156 0c-.041 2.092-.732 3.755-1.578 3.755m-1.471-5.391c.231-1.468.802-2.507 1.471-2.507.668 0 1.24 1.04 1.47 2.507a16.18 16.18 0 0 1-2.941 0m3.841-.111c-.343-2.304-1.275-3.955-2.37-3.955-1.095 0-2.027 1.651-2.37 3.955-2.086-.326-3.544-1.067-3.544-1.93 0-1.163 2.648-2.106 5.914-2.106 3.266 0 5.914.943 5.914 2.106 0 .863-1.458 1.604-3.544 1.93m-11.14 1.472c0-1.125.433-2.178 1.188-3.085a1.338 1.338 0 0 0-.013.19c0 1.415 2.125 2.617 5.088 3.059-.002.107-.004.214-.004.322 0 2.63.73 4.858 1.738 5.626-4.482-.273-7.997-2.904-7.997-6.112m9.543 6.113c1.008-.768 1.738-2.996 1.738-5.626 0-.108-.001-.215-.004-.322 2.962-.442 5.087-1.645 5.087-3.059 0-.064-.005-.127-.014-.19.755.907 1.188 1.961 1.188 3.085.001 3.207-3.514 5.838-7.995 6.112">
+                            </path>
+                        </g>
+                    </svg> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <div class="" > -->
+                <ul class="nav justify-content-end collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Vehicles
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Shopping Tools
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Local Specials</a>
+                    </li>
+                    <li class="gamburger">
+                        <i class="fa-solid fa-bars h3 p-2 mt-2 " id="gambur" onclick="f()"></i>
+
+                        <div class="gamburger-block p-5 rounded-3" id="g">
+                            <button class="btn block w-100 mb-3">
+                                <div class="d-flex justify-content-between w-100 align-items-center">
+                                    <div class="first"></div>
+                                    <div><h5>My Toyoto</h5></div>
+                                    <div class="pt-3"><p>Notifications (1)</p></div>
+                                    <div><i class="fa-solid fa-chevron-right"></i></div>
+                                </div>
+                            </button>
+                            <p><a href="" class="text-black "> Find a Dealer</a></p>
+                            <p><a href="" class="text-black">Local Specials</a></p>
+                            <p><a href="" class="text-black">Build & Price</a></p>
+                            <p><a href="" class="text-black">Search </a></p>
+                            <div class="input-group mb-3">
+                                <input type="text" autofocus class="form-control" placeholder="Zip Code"
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn btn-dark" type="button"
+                                    id="button-addon2">Update</button>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+
+                <!-- </div> -->
+            </div>
+        </nav>
+        <!-- navbar end  -->
+
+        <!-- carusell -->
+        <div class="karusel">
+            <div id="carouselExampleCaptions" class="carousel slide karusel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/grcorolla_desktop.avif" class="d-block " alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>
+                                2023 RAV4 Prime
+                            </h5>
+                            <p>Sleek and steady wins the race</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/grcorolla_desktop.avif" class="d-block " alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>2023 Corolla Hybrid</h5>
+                            <p>Make every drive count</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/grcorolla_desktop.avif" class="d-block " alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5> 2023 GR Corolla</h5>
+                            <p>Ready to rally.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- carusell end -->
+
+
+
+
+
+
+        <!-- Explore All Vehicles  -->
+        <div class="Explore mt-5">
+            <div class="text-center">
+                <h1 class="m-5">Explore All Vehicles</h1>
+                <div class="menucha d-flex justify-content-between mx-auto text-center">
+                    <a href="">Cars & Minivan</a>
+                    <a href="">Trucks</a>
+                    <a href="" class="active">Crossovers & SUVs</a>
+                    <a href="">Electrified</a>
+                    <a href="">Upcoming Vehicles</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- card -->
+        <div class="kardlar mt-5">
+            <div class="responsive">
+                <div class="card bg-1 text-white ">
+                    <div class="row g-0">
+                        <div class="col-md-7">
+                            <img src="img/card1.webp" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-5 p-3">
+                            <div class="card-body">
+                                <p>2022 | Hybrid
+                                </p>
+                                <h2 class="card-title"> Venza</h2>
+                                <p class="card-text"> Explore beyond the ordinary.</p>
+                                <div class="d-flex justify-content-between mt-4">
+                                    <div>
+                                        <h3> $33,240</h3>
+                                        <p class="f-6"> Starting MSRP *</p>
+                                    </div>
+                                    <div>
+                                        <h3>40/37
+                                        </h3>
+                                        <p class="f-6">
+                                            Est. MPG *
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between icons align-items-center ">
+                                    <button> Exsplore <i class="fa-solid fa-chevron-right"></i></button>
+                                    <a href="">Build <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-2 text-white ">
+                    <div class="row g-0">
+                        <div class="col-md-7">
+                            <img src="img/card2.webp" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-5 p-3">
+                            <div class="card-body">
+                                <p>2022 | Hybrid
+                                </p>
+                                <h2 class="card-title"> 4Runner</h2>
+                                <p class="card-text"> Explore beyond the ordinary.</p>
+                                <div class="d-flex justify-content-between mt-4">
+                                    <div>
+                                        <h3> $33,240</h3>
+                                        <p class="f-6"> Starting MSRP *</p>
+                                    </div>
+                                    <div>
+                                        <h3>40/37
+                                        </h3>
+                                        <p class="f-6">
+                                            Est. MPG *
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between icons align-items-center ">
+                                    <button> Exsplore <i class="fa-solid fa-chevron-right"></i></button>
+                                    <a href="">Build <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-3 text-white ">
+                    <div class="row g-0">
+                        <div class="col-md-7">
+                            <img src="img/card3.avif" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-5 p-3">
+                            <div class="card-body">
+                                <p>2022 | Hybrid
+                                </p>
+                                <h2 class="card-title"> Corolla</h2>
+                                <p class="card-text"> Explore beyond the ordinary.</p>
+                                <div class="d-flex justify-content-between mt-4">
+                                    <div>
+                                        <h3> $33,240</h3>
+                                        <p class="f-6"> Starting MSRP *</p>
+                                    </div>
+                                    <div>
+                                        <h3>40/37
+                                        </h3>
+                                        <p class="f-6">
+                                            Est. MPG *
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between icons align-items-center ">
+                                    <button> Exsplore <i class="fa-solid fa-chevron-right"></i></button>
+                                    <a href="">Build <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-1 text-white ">
+                    <div class="row g-0">
+                        <div class="col-md-7">
+                            <img src="img/card1.webp" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-5 p-3">
+                            <div class="card-body">
+                                <p>2022 | Hybrid
+                                </p>
+                                <h2 class="card-title"> RAV4 Prime</h2>
+                                <p class="card-text"> Explore beyond the ordinary.</p>
+                                <div class="d-flex justify-content-between mt-4">
+                                    <div>
+                                        <h3> $33,240</h3>
+                                        <p class="f-6"> Starting MSRP *</p>
+                                    </div>
+                                    <div>
+                                        <h3>40/37
+                                        </h3>
+                                        <p class="f-6">
+                                            Est. MPG *
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between icons align-items-center ">
+                                    <button> Exsplore <i class="fa-solid fa-chevron-right"></i></button>
+                                    <a href="">Build <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-2 text-white ">
+                    <div class="row g-0">
+                        <div class="col-md-7">
+                            <img src="img/card2.webp" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-5 p-3">
+                            <div class="card-body">
+                                <p>2022 | Hybrid
+                                </p>
+                                <h2 class="card-title"> Hybrid</h2>
+                                <p class="card-text"> Explore beyond the ordinary.</p>
+                                <div class="d-flex justify-content-between mt-4">
+                                    <div>
+                                        <h3> $33,240</h3>
+                                        <p class="f-6"> Starting MSRP *</p>
+                                    </div>
+                                    <div>
+                                        <h3>40/37
+                                        </h3>
+                                        <p class="f-6">
+                                            Est. MPG *
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between icons align-items-center ">
+                                    <button> Exsplore <i class="fa-solid fa-chevron-right"></i></button>
+                                    <a href="">Build <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-3 text-white ">
+                    <div class="row g-0">
+                        <div class="col-md-7">
+                            <img src="img/card3.avif" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-5 p-3">
+                            <div class="card-body">
+                                <p>2022 | Hybrid
+                                </p>
+                                <h2 class="card-title"> RAV4</h2>
+                                <p class="card-text"> Explore beyond the ordinary.</p>
+                                <div class="d-flex justify-content-between mt-4">
+                                    <div>
+                                        <h3> $33,240</h3>
+                                        <p class="f-6"> Starting MSRP *</p>
+                                    </div>
+                                    <div>
+                                        <h3>40/37
+                                        </h3>
+                                        <p class="f-6">
+                                            Est. MPG *
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between icons align-items-center ">
+                                    <button> Exsplore <i class="fa-solid fa-chevron-right"></i></button>
+                                    <a href="">Build <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="explore text-center">
+            <a href="">Explore All Vehicles <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <!-- card end -->
+        <!-- Explore All Vehicles end -->
+
+        <!-- build -->
+        <div class="build p-5">
+            <div class="row text-center bg-light m-5 mx-auto">
+                <div class="col-lg-3 col-md-6 col-sm-12 p-5 b-r">
+                    <a href="#">
+                        <img src="img/1.svg" alt="">
+                        <p>Build & Price</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12  p-5  b-r">
+                    <a href="#">
+                        <img src="img/2.svg" alt="">
+                        <p>Search Inventory</p>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12  p-5  b-r">
+                    <a href="#">
+                        <img src="img/3.svg" alt="">
+                        <p>Local Specials</p>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12  p-5">
+                    <a href="#">
+                        <img src="img/4.svg" alt="">
+                        <p>Find A Dealer</p>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- build end -->
+        <!-- let's go place  -->
+        <div class="lests">
+            <div class="bg-lets">
+                <div class="discover icons">
+                    <h2>
+                        Discover the <br> possibilities
+
+                    </h2>
+                    <button>
+                        See What We're About <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- let's go place  end-->
+
+        <!-- ELECTRIFIED -->
+        <div class="lests bg-3">
+            <div class="discover icons">
+                <h4> ELECTRIFIED</h4>
+                <h2>
+
+                    Building an electrified <br>
+                    future, today.
+
+                </h2>
+                <button>
+                    Learn More <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+
+            <div class="responsive22 mt-5 w-100 mx-auto h-100">
+                <div id="carouselExampleIndicators3" class="carousel slide w-50 mx-auto h-50 karusel-r"
+                    data-bs-ride="carousel">
+                    <div class="carousel-indicators karusel-a">
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner h-100">
+                        <div class="carousel-item active h-100">
+                            <img src="img/r1.avif" class="d-block " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/r1.avif" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/r1.avif" class="d-block " alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+        <!-- ELECTRIFIED end -->
+
+        <!-- Discover Toyota -->
+        <div class="mt-5 mb-5 pb-5">
+            <h1 class="text-center ">Discover Toyota</h1>
+            <div class="scrolll">
+
+                <div class="responsive3 d-flex">
+                    <div class="card  border-0">
+                        <img src="img/s1.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+
+                            <a href="" class="text-black">See Details</a>
+                        </div>
+                    </div>
+
+                    <div class="card border-0">
+                        <img src="img/s2.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+
+                            <a href="" class="text-black">See Details</a>
+                        </div>
+                    </div>
+                    <div class="card  border-0">
+                        <img src="img/s3.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+
+                            <a href="" class="text-black">See Details</a>
+                        </div>
+                    </div>
+
+                    <div class="card border-0">
+                        <img src="img/s2.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+
+                            <a href="" class="text-black">See Details</a>
+                        </div>
+                    </div>
+                    <div class="card  border-0">
+                        <img src="img/s3.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+
+                            <a href="" class="text-black">See Details</a>
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <img src="img/s2.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+
+                            <a href="" class="text-black">See Details</a>
+                        </div>
+                    </div>
+                    <div class="card  border-0">
+                        <img src="img/s3.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+
+                            <a href="" class="text-black">See Details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Discover Toyota  end -->
+
+        <!-- footer -->
+        <div class="bg-light pt-5">
+            <div class="d-flex justify-content-between align-items-center p-5">
+                <div class="footer-a">
+                    <a href="#" class="text-black m-2"> Accessibility</a>
+                    <a href="#" class="text-black m-2">Do Not Sell My Personal Information</a>
+                    <a href="#" class="text-black m-2">Cookie Consent Options</a>
+                </div>
+                <div class="footer-i">
+                    <button class="btn btn-info text-white Manage">
+                        Manage Preferences
+                    </button>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+
+            <div class="row footer-jadval p-5">
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <p><a href="#"><b>Contact Us</b></a></p>
+                    <p><a href="#"><b>FAQs</b></a></p>
+                    <p><a href="#"><b>Español</b></a></p>
+
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <p><a href=""><b>Shopping Tools</b></a></p>
+                    <p><a href="">Trade-In Value</a></p>
+                    <p><a href="">Shopping Tools</a></p>
+                    <p><a href="">Trade-In Value</a></p>
+                    <p><a href="">Build Your Toyota</a></p>
+                    <p><a href="">Search Inventory</a></p>
+                    <p><a href="">Find a Dealer</a></p>
+                    <p><a href="">SmartPath</a></p>
+                    <p><a href="">Local Specials</a></p>
+                    <p><a href="">What Fits My Budget</a></p>
+                    <p><a href="">Payment Estimator</a></p>
+                    <p><a href="">Request a Quote</a></p>
+                    <p><a href="">Buy Parts & Accessories</a></p>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <p><a href=""><b>Shopping Tools</b></a></p>
+                    <p><a href="">Trade-In Value</a></p>
+                    <p><a href="">Shopping Tools</a></p>
+                    <p><a href="">Trade-In Value</a></p>
+                    <p><a href="">Build Your Toyota</a></p>
+                    <p><a href="">Search Inventory</a></p>
+                    <p><a href="">Find a Dealer</a></p>
+                    <p><a href="">SmartPath</a></p>
+                    <p><a href="">Local Specials</a></p>
+                    <p><a href="">What Fits My Budget</a></p>
+                    <p><a href="">Payment Estimator</a></p>
+                    <p><a href="">Nightshade Series</a></p>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <p><a href=""><b>Shopping Tools</b></a></p>
+                    <p><a href="">Trade-In Value</a></p>
+                    <p><a href="">Shopping Tools</a></p>
+                    <p><a href="">Trade-In Value</a></p>
+                    <p><a href="">Build Your Toyota</a></p>
+                    <p><a href="">Search Inventory</a></p>
+                    <p><a href="">Find a Dealer</a></p>
+                    <p><a href="">SmartPath</a></p>
+                    <p><a href="">Local Specials</a></p>
+                    <p><a href="">What Fits My Budget</a></p>
+                    <p><a href="">Payment Estimator</a></p>
+                    <p><a href="">Request a Quote</a></p>
+                    <p><a href="">Accessories</a></p>
+                    <p><a href="">What Fits My Budget</a></p>
+                    <p><a href=""> Toyota Fleet</a></p>
+                    <p><a href="">Rent a Toyota</a></p>
+                    <p><a href="">Car Tips & Advice</a></p>
+
+
+
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <p><a href=""><b>Shopping Tools</b></a></p>
+                    <p><a href="">Trade-In Value</a></p>
+                    <p><a href="">Shopping Tools</a></p>
+                    <p><a href="">Trade-In Value</a></p>
+                    <p><a href="">Build Your Toyota</a></p>
+                    <p><a href="">Search Inventory</a></p>
+                    <p><a href="">Find a Dealer</a></p>
+                    <p><a href="">SmartPath</a></p>
+                    <p><a href="">Local Specials</a></p>
+
+                </div>
+            </div>
+            <hr>
+
+            <div class="footer-img text-center p-5 m-5">
+                <img src="img/footer-img.svg" alt="">
+                <p class="fs-6">Proud Partner of Team USA</p>
+
+                <div>
+                    <p>©2022 Toyota Motor Sales, U.S.A., Inc. All information applies to U.S. vehicles only. <br>
+                        The use of Olympic Marks, Terminology and Imagery is authorized by the U.S. Olympic & Paralympic
+                        Committee pursuant to Title 36 U.S. Code Section 220506.
+
+
+
+
+                    </p>
+                    <div class="footer-nav d-flex justify-content-center w-50 mx-auto">
+                        <p><a href="" class="text-black  border-end2"> Privacy Policy</a></p>
+                        <p><a href="" class="text-black  border-end2"> California Privacy</a></p>
+                        <p><a href="" class="text-black  border-end2">Legal Terms</a></p>
+                        <p><a href="" class="text-black  border-end3">Site Map</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- footer end  -->
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
